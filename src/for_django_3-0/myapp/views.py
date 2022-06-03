@@ -4,7 +4,10 @@ from .forms import DocumentForm
 
 
 def my_view(request):
-    print(f"Great! You're using Python 3.6+. If you fail here, use the right version.")
+    print(
+        "Great! You're using Python 3.6+. If you fail here, use the right version."
+    )
+
     message = 'Upload as many files as you want!'
     # Handle file upload
     if request.method == 'POST':
